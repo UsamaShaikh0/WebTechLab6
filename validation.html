@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+	<script type="text/javascript">
+		function validate(){
+			var value = document.getElementById('name').value;
+			var email = document.getElementById('email').value;
+
+			if (value.length == 0 || email.length<=10){
+				alert('Please enter your name and valid emai id');
+			} 	else {
+				alert('All correct');
+			}
+			
+		} 
+	</script>
+</head>
+<body>
+<form >
+	<label>Name :</label>
+	<input type="text" id="name" placeholder="Enter your name"> <br></br>
+	<label>Email :</label>
+	<input type="email" id="email" placeholder="Enter your correct email"> <br></br>
+	<input type="button" name="check" value="Click me to Check" onclick="validate()">
+</form>
+</body>
+</html>
