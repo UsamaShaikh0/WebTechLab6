@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fortune Teller</title>
+
+    <script>
+        function fortune(age, occupation, partner, noC){
+            document.getElementById('container').innerHTML = "At the Age of " + age + " you will be a " + occupation + " and married to " +partner+ " with " +noC+ " Children";
+        }
+    </script>
+</head>
+<body>
+    <h1>Fortune Teller</h1>
+    <button onclick="fortune(28, 'doctor', 'Dean Holder', 2)"> Know Your Future! </button>
+    <h3 id="container"></h3>
+</body>
+</html>

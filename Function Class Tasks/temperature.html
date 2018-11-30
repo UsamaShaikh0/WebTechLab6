@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+
+    <script>
+        function celsius(temp){
+            var cTemp = (5*(temp-32))/9 ;
+            alert(temp + " Fahrenheit is equals to " + cTemp + " Celsius");
+        }
+
+        function fahrenheit(temp){
+            var fTemp = (9*(temp+32))/5;
+            alert(temp + " Celsius is equals to " + fTemp + " Fahrenheit");
+        }
+    </script>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+
+    <button onclick="celsius(210);"> Fahrenheit to Celsius</button>
+    <button onclick="fahrenheit(85);"> Celsius to Fahrenheit</button>
+</body>
+</html>

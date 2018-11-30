@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Circle</title>
+
+    <script>
+        function area(rad){
+            var cArea = Math.PI * rad * rad;
+            alert("Area of circle with radius " + rad + " is: " + cArea);
+        }
+
+        function circumference(rad){
+            var cCircumference = 2 * Math.PI * rad;
+            alert("Circumference of circle with radius " + rad + " is: " + cCircumference);
+        }
+    </script>
+</head>
+<body>
+    <h1>Circle Calculation</h1>
+    <button onclick="area(12);">Area of circle</button>
+    <button onclick="circumference(12)">Circumference of Circle</button>
+</body>
+</html>
