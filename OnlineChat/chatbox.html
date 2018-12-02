@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Online Chat Service</title>
+        <link rel="stylesheet" type="text/css" href="chatbox.css">
+        <script type="text/javascript" src="chatbox.js"></script>
+    </head>
+        
+    <body>
+
+        <header>
+            <h1>Online Chat Service</h1>
+        </header>
+        
+        <div id="namelist">
+            <ul>
+                <li onclick="showBoxOne()">
+                    <img src="images/harry.jpg" >
+                    <div class="name">Harry</div>				
+                </li>
+                <li>
+                    <img src="images/ron.jpg">
+                    <div class="name">Ron</div>
+                </li>
+                <li>
+                    <img src="images/hermione.jpg">
+                    <div class="name">Hermione</div>
+                </li>
+                <li onclick="showBoxTwo()">
+                    <img src="images/hagrid.jpg" >
+                    <div class="name">Hagrid</div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="chatbox" >
+
+            <div class="box" style="display: none" id="box1">
+                <div class="head">
+                    <h4>Harry</h4>
+                </div>
+                <div class="body">
+                    <p>Excuse me, who are you?</p>
+                </div>
+                <div class="message">
+                    <p>Type your message</p>
+                    <button> Send </button>
+                </div>
+            </div>
+
+
+            <div class="box" style="display: none" id="box2">
+                <div class="head">
+                    <h4>Hagrid</h4>
+                </div>
+                <div class="body">
+                    <p>Rubeus Hagrid. Keeper of keys and grounds at Hogwarts. Course, you'll know all about Hogwarts.</p>
+                </div>
+                <div class="message">
+                    <p>Type your message</p>
+                    <button> Send </button>	
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="footer">
+
+            <div class="contact">
+                <a href="https://www.facebook.com"> <img src="images/fb.png" /> </a>
+                <a href="https://www.instagram.com"> <img src="images/insta.jpg" /> </a>
+                <a href="https://www.twitter.com"> <img src="images/twitter.png" /> </a>		
+                    
+                <p>Copyrights&copy All rights reserved 2018.</p>
+            </div>
+
+        </div>
+    </body>
+</html>
